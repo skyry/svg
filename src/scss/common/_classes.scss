@@ -1,0 +1,72 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: calc(100vh - 140px);
+    width: 100vw;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        height: auto;
+    }
+}
+  
+.container__head {
+    font-size: 3rem;
+    text-align: center;
+    color: orangered;
+    text-shadow: 2px 2px 4px black;
+    margin-bottom: 20px;
+
+    @media (max-width: 768px) {
+        font-size: 2rem;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 1.5rem;
+    }
+}
+
+.container__square {
+    fill: fuchsia;
+    stroke-width: 5;
+    stroke: aqua;
+
+    &:hover {
+        fill: greenyellow;
+        stroke: red;
+    }
+}
+  
+.container__rect {
+    fill: lightsalmon;
+    stroke-width: 5;
+    stroke: yellowgreen;
+
+    &:hover {
+        fill: yellow;
+        stroke: blue;
+    }
+}
+
+.container__circle {
+    fill: purple;
+    stroke-width: 5;
+    stroke: white;
+
+    &:hover {
+        fill: green;
+        stroke: black;
+    }
+}
+  
+.container__ellipse {
+    fill: navy;
+    stroke-width: 5;
+    stroke: lime;
+
+    &:hover {
+        fill: maroon;
+        stroke: gray;
+    }
+}
